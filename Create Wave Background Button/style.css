@@ -77,8 +77,12 @@ a:hover .liquid{
         rotate: (0deg);
     }
     50%{
-        transform: translate(-50%,-60%);
-        rotate: (40deg);
+        transform: translate(-30%,-70%);
+        rotate: (60deg);
+    }
+    75%{
+        transform: translate(-50%,-70%);
+        rotate: (120deg);
     }
     100%{
         transform: translate(-50%,-75%);
