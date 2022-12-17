@@ -80,6 +80,9 @@ body{
     transform: translateY(0);
 }
 
+.container .card .face.face2 .content{
+    text-align: center;
+}
 .container .card .face.face2 .content p {
     margin: 0;
     padding: 0;
@@ -93,6 +96,7 @@ body{
     color: #333;
     padding: 5px;
     border: 1px solid #333;
+    border-radius: 20px;
 }
 
 .container .card .face.face2 .content a:hover{
