@@ -22,7 +22,7 @@ section {
 }
 
 main {
-  view-timeline-name: --main;
+  --view-timeline-name: --main;
   overflow-x: hidden;
   overflow-y: auto;
   display: grid;
@@ -52,14 +52,14 @@ main {
   position: fixed;
   top: 1rem;
   right: 2rem;
-  aspect-ratio: 1;
+  --aspect-ratio: 1;
   width: 6rem;
-  animation-timeline: --progress;
+  --animation-timeline: progress;
   -webkit-animation: progress both linear;
   animation: progress both linear;
   -webkit-animation-delay: enter -500%;
   animation-delay: enter -500%;
-  animation-end-delay: enter 100%;
+ --animation-end-delay: enter 100%;
 }
 @-webkit-keyframes progress {
   to {
@@ -92,7 +92,7 @@ main {
 }
 
 section:last-of-type {
-  view-timeline-name: --progress;
+  --view-timeline-name: progress;
 }
 
 @keyframes progress {
@@ -102,7 +102,7 @@ section:last-of-type {
 }
 
 section:nth-of-type(2) {
-  view-timeline-name: --horizontal;
+  --view-timeline-name: horizontal;
   height: 400vh;
   scroll-snap-align: start;
 }
@@ -121,10 +121,10 @@ section:last-of-type img {
   display: flex;
   -webkit-animation: faux-scroll both linear;
   animation: faux-scroll both linear;
-  animation-timeline: --horizontal;
+  animation-timeline: horizontal;
   -webkit-animation-delay: enter 100%;
   animation-delay: enter 100%;
-  animation-end-delay: exit 0%;
+  animation-delay: exit 0%;
 }
 
 @-webkit-keyframes faux-scroll {
